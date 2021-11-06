@@ -1,4 +1,5 @@
 from music_player2.carchive import readint, readwstr
+from music_player2.exception import NoMorePlayListError
 from enum import Enum, unique
 
 
@@ -35,10 +36,6 @@ class PlaylistInfo:
 名称：{self.name if self.name else self.type}
 上次播放/总曲目: {self.track + 1}/{self.track_num}
 上次播放位置/总时长: {self.position}/{self.total_time}"""
-
-
-class NoMorePlayListError(Exception):
-    pass
 
 
 class RecentPlayListFile:

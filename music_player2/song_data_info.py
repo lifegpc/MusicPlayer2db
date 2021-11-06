@@ -391,7 +391,3 @@ class SongDataInfo:
             self.__data['year'] = v
         else:
             raise TypeError()
-
-
-class NoMoreSongDataError(Exception):
-    pass

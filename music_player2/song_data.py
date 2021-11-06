@@ -16,8 +16,9 @@ from music_player2.carchive import (
     writeword,
     writewstr,
 )
+from music_player2.exception import NoMoreSongDataError
 from music_player2.file_mode import FileMode
-from music_player2.song_data_info import SongDataInfo, NoMoreSongDataError
+from music_player2.song_data_info import SongDataInfo
 
 
 class SongDataFile:
